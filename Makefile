@@ -16,7 +16,7 @@ proto-post:
 		--go_out=post-service --go_opt=paths=source_relative \
 		--go-grpc_out=post-service --go-grpc_opt=paths=source_relative \
 		post-service/proto/user.proto
-	# Generate post.proto di post-service (yang mengimport user.proto)
+	# Generate post.proto di post-service
 	protoc --proto_path=post-service/proto \
 		--go_out=post-service --go_opt=paths=source_relative \
 		--go-grpc_out=post-service --go-grpc_opt=paths=source_relative \
